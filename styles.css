@@ -1,0 +1,40 @@
+:root {
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+body {
+  background-color: #20252b;
+  padding: 0.75rem;
+}
+
+h2 {
+  font-weight: 500;
+}
+
+#linechart_material {
+  margin-bottom: 1.5rem;
+}
+
+#states-menu {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+#states-menu > button {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.35);
+  font-size: 15px;
+  padding: 0.5em;
+  border: none;
+}
+#states-menu > button:nth-child(2n) {
+  background-color: rgba(0, 0, 0, 0.65);
+}
+#states-menu > button:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  transition-duration: 250ms;
+  cursor: pointer;
+}
+.state-selected {
+  background-color: rgba(255, 255, 255, 0.25) !important;
+}
