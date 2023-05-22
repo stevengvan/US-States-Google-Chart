@@ -88,6 +88,7 @@ async function drawChart() {
 
   // Add toggleable buttons of States for line chart
   const statesSelector = document.getElementById("states-menu");
+  statesSelector.innerHTML = null;
   for (const [key, _] of Object.entries(statesResult["2013"])) {
     const stateButton = document.createElement("button");
     stateButton.textContent = key;
